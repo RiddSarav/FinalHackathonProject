@@ -9,11 +9,11 @@ def SymptomCheck(year, symptomnumber, gendermedical):
     )
     response = r.json()
     print(response)
-    retStr = f"Based on our symptems the problem most likely is, {response[0]['Issue']['Name']}"
-    retStr+=f" We can confirm this with the following percent accuracy, {response[0]['Issue']['Accuracy']} ! "
-    retStr+=f" The best doctor to go to for this is {response[0]['Specialisation'][0]['Name']}"
+    retStr = f"based on the symptoms you have provided the problem is most likely: {response[0]['Issue']['Name']}."
+    retStr+=f" We can confirm say this with {response[0]['Issue']['Accuracy']} percent accuracy."
+    retStr+=f" We reccomend you to visit a {response[0]['Specialisation'][0]['Name']} doctor."
     try:
-        retStr+= f" OR for a different doctor use {response[0]['Specialisation'][1]['Name']}"
+        retStr+= f" another viable doctor would be a {response[0]['Specialisation'][1]['Name']} doctor."
     except IndexError:
-        retStr+="  ,No Specific Doctor for this and Its just the previosuly stated doctor"
+        retStr+="  ,there is no specific doctor to deal with these symptoms, the previous one should suffice."
     return retStr
