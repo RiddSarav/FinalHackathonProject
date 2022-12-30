@@ -17,5 +17,11 @@ def home():
         except IndexError:
             return "your symptom range goes not let us get any illness for those symptoms please imput additional symptoms or consult a medical professional"
     return render_template('hackathonstuff.html')
+@app.route("/about")
+def about():
+    return render_template("about.html")
+@app.route('/contact'):
+def contact():
+    return render_template("contact.html")
 if __name__ == '__main__':
     app.run()
