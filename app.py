@@ -15,7 +15,7 @@ def home():
             r= SymptomCheck(birth,number,gender)
             return render_template('result.html',r=r)
         except IndexError:
-            return "your symptom range goes not let us get any illness for those symptoms please imput additional symptoms or consult a medical professional"
+            return "Your symptom range doesn't exist, please consult a medical professional."
     return render_template('hackathonstuff.html')
 @app.route("/about")
 def about():
