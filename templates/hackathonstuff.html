@@ -1,9 +1,14 @@
+<html>
+<head>    <link rel="stylesheet" href="hackathon.css">
+
+</head>
+
 <body>
-  <div class="popup">
+  <div class="popup1">
          <button id="close">&times;</button>
          <h2>Insta-Diagnose</h2>
          <p>
-             Insta Diagnose is a health app built to help you get your diagnosis as fast and as easy as possible! Continue if you want to learn how to use the site.
+             Insta Diagnose is a health app built to help you get your diagnosis as fast and as easy as possible!<br>
          </p>
          <a href="/">Let's Go</a>
      </div>
@@ -13,9 +18,9 @@
 
 <ul class="nav">
 
-  <li><a href="contact.html">Contact</a></li>
-  <li><a href="about.html">About</a></li>
-  <li class="logo"><a  href="hackathonstuff.html">Insta-Diagnose</a></li>
+  <li><a href="/contact">Contact</a></li>
+  <li><a href="/about">About</a></li>
+  <li class="logo"><a  href="/">Insta-Diagnose</a></li>
 </ul>
 
 <p class = 'center'>Enter Your Symptoms to be Diagnosed</p>
@@ -126,11 +131,11 @@
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
  <script>
  $(document).ready(function(){
-   $(".popup").css("display", "block");
+   $(".popup1").css("display", "block");
    $('.haha2').attr('id', 'blur');
    $("#close").click(function(){
-     $(".popup").css("display", "");
-     $(".popup").css("display", "none");
+     $(".popup1").css("display", "");
+     $(".popup1").css("display", "none");
      $('.haha2').attr('id', '');
 
    });
