@@ -134,10 +134,10 @@
 {{ r }}
 
 </div>
-<div style="float: right;">
-    <div id="map" style="width:900px; height:600px;"></div>
+<div style="text-align: : center; display: inline-block;">
+    <div id="map" style="width:620px; height:600px;"></div>
 </div>
-<form name="frm_map" id="frm_map">
+<form name="frm_map" id="frm_map" class="tabled">
        <table>
            <tr>
                <th>Address</th>
@@ -151,11 +151,12 @@
                    <input type="text" name="radius" id="radius" value="5" placeholder="In KM">
                </td>
            </tr>
+
            <tr>
                <td></td>
                <td>
-                   <input type="button" value="Show" id="submit" onclick="renderMap();">
-                   <input type="reset" value="Reset">
+                   <input type="button" value="Find Hospitals" id="submit" onclick="renderMap();">
+
                </td>
            </tr>
        </table>
