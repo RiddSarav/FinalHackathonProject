@@ -15,5 +15,5 @@ def SymptomCheck(year, symptomnumber, gendermedical):
     try:
         retStr+= f" another viable doctor would be a {response[0]['Specialisation'][1]['Name']} doctor."
     except IndexError:
-        retStr+="  ,there is no specific doctor to deal with these symptoms, the previous one should suffice."
+        retStr+=" There is no other type of doctor to deal with these symptoms, the previously mentioned doctor is the only one."
     return retStr
