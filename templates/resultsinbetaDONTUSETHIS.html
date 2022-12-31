@@ -30,19 +30,12 @@
 
       function renderMap()
       {
-          // Get the user defined values
+
           var address = document.getElementById('address').value;
           var radius  = parseInt(document.getElementById('radius').value) * 1000;
 
-          // get the selected type
-          selectedTypes = [];
-          $('.types').each(function(){
-              if($(this).is(':checked'))
-              {
-                  selectedTypes.push($(this).val());
-              }
-          });
 
+          selectedTypes = ["hospital"];
           var geocoder    = new google.maps.Geocoder();
           var selLocLat   = 0;
           var selLocLng   = 0;
