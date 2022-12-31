@@ -54,7 +54,7 @@ li {
 border: none;
 padding: 5px;
 /* font: 24px/36px sans-serif; */
-width: 150px;
+width: 170px;
 height: 445.77px;
 overflow: scroll;
 text-align: left;
@@ -140,7 +140,7 @@ body{
   text-align: center;
  display: grid;
  grid-template: auto;
- grid-template-columns: auto 600px 150px auto;
+ grid-template-columns: auto 600px 170px auto;
 }
 .attempt3{
   text-align: center;
