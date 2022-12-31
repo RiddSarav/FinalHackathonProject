@@ -4,18 +4,28 @@
   <title>InstaDiagnose</title>
 
 </head>
-<body class = 'haha2'>
+<body>
+  <div class="popup">
+         <button id="close">&times;</button>
+         <h2>Insta-Diagnose</h2>
+         <p>
+             Insta Diagnose is a health app built to help you get your diagnosis as fast and as easy as possible! Continue if you want to learn how to use the site.
+         </p>
+         <a href="/">Let's Go</a>
+     </div>
+<div class="haha2">
 
 
 
 <ul class="nav">
 
-  <li><a href="/contact">Contact</a></li>
-  <li><a href="/about">About</a></li>
-  <li class="logo"><a  href="/">Insta-Diagnose</a></li>
+  <li><a href="contact.html">Contact</a></li>
+  <li><a href="about.html">About</a></li>
+  <li class="logo"><a  href="hackathonstuff.html">Insta-Diagnose</a></li>
 </ul>
 
-<p class = 'center'>Enter Your Symptoms to be Diagnosed within 30 seconds</p>
+<p class = 'center'>Enter Your Symptoms to be Diagnosed</p>
+
 <div class="attempt2">
 <div>
 
@@ -25,19 +35,18 @@
 <div class="floatside">
 
 
-
 <table><tr><td>
+  <h1 class="center"> Mandatory Info</h1>
+  <div class = 'center'><form action='/' id='home' method='post'>
+  <p>Sex Assigned at Birth</p>
+  <div><input type='text' class='formele' name='gender' placeholder='Gender' required></div>
+  <p>Year Of Birth</p>
+  <div><input type='text' class='formele' name='age' placeholder='Year Of Birth' required></div>
+  <p>Symptom Number</p>
+  <div><input type='text' class='formele' name='symptomnumber' placeholder='Symptom Number' required></div>
+  <div><input type='submit' class = 'sub' value='diagnosis'></div>
+  </form><div>
 
-<h1 class="center"> Mandatory Info</h1>
-<div class = 'center'><form action='/' id='home' method='post'>
-<p>Sex Assigned at Birth</p>
-<div><input type='text' class='formele' name='gender' placeholder='Gender' required></div>
-<p>Year Of Birth</p>
-<div><input type='text' class='formele' name='age' placeholder='Year Of Birth' required></div>
-<p>Symptom Number</p>
-<div><input type='text' class='formele' name='symptomnumber' placeholder='Symptom Number' required></div>
-<div><input type='submit' class = 'sub' value='diagnosis'></div>
-</form><div>
 
 </td></tr></table>
 </div>
@@ -101,6 +110,36 @@
 </p>
 </div>
 </div>
-
+</div>
+</div>
+</div>
 </body>
+<script type="text/javascript">
+// window.addEventListener("load", function(){
+//    setTimeout(
+//        function open(event){
+//            document.querySelector(".popup").style.display = "block";
+//            document.getElementById("body").classList.add(".blur");
+//        },
+//        2000
+//    )
+// });
+// document.querySelector("#close").addEventListener("click", function(){
+//    document.querySelector(".popup").style.display = "none";
+//    document.getElementById("#haha").classList.remove(".blur");
+// });
+   </script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+ <script>
+ $(document).ready(function(){
+   $(".popup").css("display", "block");
+   $('.haha2').attr('id', 'blur');
+   $("#close").click(function(){
+     $(".popup").css("display", "");
+     $(".popup").css("display", "none");
+     $('.haha2').attr('id', '');
+
+   });
+ });
+ </script>
 </html>
