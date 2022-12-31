@@ -23,5 +23,8 @@ def about():
 @app.route('/contact')
 def contact():
     return render_template("contact.html")
+@app.route("/testing")
+def testing():
+    return render_template("resultsinbetaDONTUSETHIS.html")
 if __name__ == '__main__':
     app.run()
