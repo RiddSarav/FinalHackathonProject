@@ -148,7 +148,7 @@ body{
   opacity: 0.8;
   z-index:-1;
 }
-.popup1{
+.popup{
     background-color: #FFE49E;
     width: 800px;
     padding: 30px 20px;
@@ -161,7 +161,7 @@ body{
     display: none;
     text-align: center;
 }
-.popup1 button{
+.popup button{
   display: block;
 margin:  0 0 20px auto;
 background-color: transparent;
@@ -175,18 +175,18 @@ border: none;
 outline: none;
 cursor: pointer;
 }
-.popup1 h2{
+.popup h2{
 margin-top: -10px;
 color: #837346;
 }
-.popup1 p{
+.popup p{
 font-size: 17px;
 text-align: justify;
 margin: 20px 0;
 line-height: 25px;
 color: #837346;
 }
-.popup1 a{
+.popup a{
 display: block;
 width: 150px;
 position: relative;
