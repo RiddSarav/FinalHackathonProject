@@ -6,23 +6,47 @@
 </head>
 
 <body>
-  <div class="popup1">
-         <button id="close">&times;</button>
+  <div class="popup" id="1">
+         <button class="close">&times;</button>
          <h2>Insta-Diagnose</h2>
          <p>
-             Insta Diagnose is a health app built to help you get your diagnosis as fast and as easy as possible!<br>
+             Insta Diagnose is a health website built to help you get your diagnosis as fast and as easy as possible! Continue if you want a tutorial on how to use this site.
          </p>
-         <a href="/">Let's Go</a>
+         <a href="#" class="next1">Let's Go</a>
      </div>
+     <div class="popup" id="2">
+            <button class="close">&times;</button>
+            <h2>Navigation</h2>
+            <p>
+                This website has a nav bar at the very top, which has numerous tabs that you can click on. They each lead to different pages, and you can always get back to the home page by clicking insta-diagnose in the top right corner.
+            </p>
+            <a href="#" class="next2">Next</a>
+        </div>
+        <div class="popup" id="3">
+               <button class="close">&times;</button>
+               <h2>Submitting Your Symptoms</h2>
+               <p>
+                   In order for us to recieve your symptoms please enter your birth year, sex, and symptom number which is provided in the symptoms list. You can add more than one symptom number, seperated by a comma, or a single symptom number by itself.
+               </p>
+               <a href="#" class="next3">Next</a>
+           </div>
+           <div class="popup" id="4">
+                  <button class="close">&times;</button>
+                  <h2>Your Results</h2>
+                  <p>
+                      Insta-Diagnose will lead you to a screen with your diagnosis, type of doctor reccomended, and an inbuilt map that will show hospitals in your area when you input your location and radius.(km)
+                  </p>
+                  <a href="#" class="done">Exit</a>
+              </div>
 <div class="haha2">
 
 
 
 <ul class="nav">
 
-  <li><a href="/contact">Contact</a></li>
-  <li><a href="/about">About</a></li>
-  <li class="logo"><a  href="/">Insta-Diagnose</a></li>
+  <li><a href="contact.html">Contact</a></li>
+  <li><a href="about.html">About</a></li>
+  <li class="logo"><a  href="hackathonstuff.html">Insta-Diagnose</a></li>
 </ul>
 
 <p class = 'center'>Enter Your Symptoms to be Diagnosed</p>
@@ -133,13 +157,39 @@
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
  <script>
  $(document).ready(function(){
-   $(".popup1").css("display", "block");
+   $("#1").css("display", "block");
+   $("#2").css("display", "none");
+   $("#3").css("display", "none");
+   $("#4").css("display", "none");
    $('.haha2').attr('id', 'blur');
-   $("#close").click(function(){
-     $(".popup1").css("display", "");
-     $(".popup1").css("display", "none");
+   $(".close").click(function(){
+     $("#1").css("display", "");
+     $("#1").css("display", "none");
+     $("#2").css("display", "none");
+     $("#3").css("display", "none");
+     $("#4").css("display", "none");
      $('.haha2').attr('id', '');
 
+   });
+   $(".next1").click(function(){
+     $("#1").css("display", "");
+     $("#1").css("display", "none");
+     $("#2").css("display", "block");
+   });
+   $(".next2").click(function(){
+     $("#2").css("display", "");
+     $("#2").css("display", "none");
+     $("#3").css("display", "block");
+   });
+   $(".next3").click(function(){
+     $("#3").css("display", "");
+     $("#3").css("display", "none");
+     $("#4").css("display", "block");
+   });
+   $(".done").click(function(){
+     $("#4").css("display", "");
+     $("#4").css("display", "none");
+     $('.haha2').attr('id', '');
    });
  });
  </script>
